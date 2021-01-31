@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>AI Upscale Compare</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+
+        body {
+            background: #121212;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            counter-reset: section;
+        }
+
+        section {
+            counter-increment: section;
+            height: 100vh;
+            padding: 2em;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            position: relative;
+        }
+            section:before {
+
+                content: counters(section, ".", decimal-leading-zero);
+
+                position: absolute;
+                top: 2rem;
+                left: 2rem;
+
+                font-size: 15vh;
+                line-height: 1;
+                font-weight: 700;
+
+                opacity: 0.1;
+            }
+
+        section + section {
+            border-top: 4px solid rgba(255,255,255,0.1);
+        }
+
+        .container {
+            display: inline-block;
+            line-height: 0;
+            position: relative;
+            width: 100%;
+            padding-top: 42.3%;
+        }
+
+            .container * {
+                pointer-events: none;
+            }
+            .container>video {
+                width: 100%;
+                position: absolute;
+                top: 0;
+                height: 100%;
+            }
+
+        .clipper {
+            width: 50%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            overflow: hidden;
+
+            border-right: 1px solid #333;
+        }
+
+            .clipper video {
+                width: 200%;
+                position: absolute;
+                height: 100%;
+            }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <video loop muted preload>
+                    <source src="01_upscale.mp4?12413214652343">
+                </video>
+                <div class="clipper">
+                    <video loop muted preload>
+                        <source src="01_source.mp4?12413214652343">
+                    </video>
+                </div>
+            </div>
+            <p>Source: 320x240 | Scaling 300%</p>
+        </section>
+        <section>
+            <div class="container">
+                <video loop muted preload>
+                    <source src="02_upscale.mp4?12413214652343">
+                </video>
+                <div class="clipper">
+                    <video loop muted preload>
+                        <source src="02_source.mp4?12413214652343">
+                    </video>
+                </div>
+            </div>
+            <p>Source: 320x240 | Scaling 300%</p>
+        </section>
+        <section>
+            <div class="container">
+                <video loop muted preload>
+                    <source src="03_upscale.mp4?12413214652343">
+                </video>
+                <div class="clipper">
+                    <video loop muted preload>
+                        <source src="03_source.mp4?12413214652343">
+                    </video>
+                </div>
+            </div>
+            <p>Source: 320x240 | Scaling 300%</p>
+        </section>
+        <section>
+            <div class="container">
+                <video loop muted preload>
+                    <source src="04_upscale.mp4?12413214652343">
+                </video>
+                <div class="clipper">
+                    <video loop muted preload>
+                        <source src="04_source.mp4?12413214652343">
+                    </video>
+                </div>
+            </div>
+            <p>Source: 320x240 | Scaling 300%</p>
+        </section>
+        <section>
+            <div class="container">
+                <video loop muted preload>
+                    <source src="05_upscale.mp4?12413214652343">
+                </video>
+                <div class="clipper">
+                    <video loop muted preload>
+                        <source src="05_source.mp4?12413214652343">
+                    </video>
+                </div>
+            </div>
+            <p>Source: 196x144 | Scaling 500%</p>
+        </section>
+        <section>
+            <div class="container">
+                <video loop muted preload>
+                    <source src="06_upscale.mp4?12413214652343">
+                </video>
+                <div class="clipper">
+                    <video loop muted preload>
+                        <source src="06_source.mp4?12413214652343">
+                    </video>
+                </div>
+            </div>
+            <p>Source: 196x144 | Scaling 500%</p>
+        </section>
+        <section>
+            <div class="container">
+                <video loop muted preload>
+                    <source src="07_upscale.mp4?12413214652343">
+                </video>
+                <div class="clipper">
+                    <video loop muted preload>
+                        <source src="07_source.mp4?12413214652343">
+                    </video>
+                </div>
+            </div>
+            <p>Source: 320x240 | Scaling 300%</p>
+        </section>
+        <section>
+            <div class="container">
+                <video loop muted preload>
+                    <source src="08_upscale.mp4?12413214652343">
+                </video>
+                <div class="clipper">
+                    <video loop muted preload>
+                        <source src="08_source.mp4?12413214652343">
+                    </video>
+                </div>
+            </div>
+            <p>Source: 196x144 | Scaling 500%</p>
+        </section>
+        <section>
+            <div class="container">
+                <video loop muted preload>
+                    <source src="09_upscale.mp4?12413214652343">
+                </video>
+                <div class="clipper">
+                    <video loop muted preload>
+                        <source src="09_source.mp4?12413214652343">
+                    </video>
+                </div>
+            </div>
+            <p>Source: 320x240 | Scaling 300%</p>
+        </section>
+        <section>
+            <div class="container">
+                <video loop muted preload>
+                    <source src="10_upscale.mp4?12413214652343">
+                </video>
+                <div class="clipper">
+                    <video loop muted preload>
+                        <source src="10_source.mp4?12413214652343">
+                    </video>
+                </div>
+            </div>
+            <p>Source: 320x240 | Scaling 300%</p>
+        </section>
+    </main>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function() {
+
+            const trackLocation = (e) => {
+
+                const container = e.srcElement || e.originalTarget;
+                const rect = container.getBoundingClientRect();
+                const position = ((e.pageX - rect.left) / container.offsetWidth) * 100;
+
+                const clipper = container.querySelector('.clipper');
+                const video = clipper.querySelector('video');
+
+                if( position <= 100 ) {
+                    clipper.style.width = position + "%";
+                    video.style.width = ((100 / position) * 100) + "%";
+                    video.style.zIndex = 3;
+                }
+            }
+
+            let containers = document.querySelectorAll('.container');
+
+            containers.forEach(c=>{
+
+                let observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+
+                        let videos = entry.target.querySelectorAll('video');
+
+                        let checkReady = (cb)=>{
+
+                            console.log("checking");
+                            let ready = true;
+                            videos.forEach(v=>{
+                                if( v.readyState != 4 ) {
+                                    ready = false;
+                                }
+                            });
+
+                            if( ready ) {
+                                cb(); return;
+                            }
+                            setTimeout(()=>{
+                                checkReady(cb);
+                            },200);
+                        };
+
+                        if( entry.intersectionRatio!=1 ){
+                            videos.forEach(v=>{
+                                v.pause();
+                            });
+                            console.log(`pause`);
+                        }
+                        else {
+
+                            checkReady(()=>{
+
+                                videos.forEach(v=>{
+                                    v.play();
+                                });
+                                console.log(`play`);
+                            });
+                        }
+                    });
+                }, {threshold: 1});
+
+                observer.observe(c);
+
+                c.addEventListener("mousemove", trackLocation, false);
+                c.addEventListener("touchstart", trackLocation, false);
+                c.addEventListener("touchmove", trackLocation, false);
+            });
+        });
+
+    </script>
+</body>
+
+</html>
